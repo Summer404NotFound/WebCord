@@ -7,11 +7,11 @@
   "main": "app/code/common/main.js",
   "scripts": {
     "prepare": "husky install",
+    "tsc": "tsc",
     "test": "tsc & eslint --ext .json,.ts . & wait",
     "lint": "eslint --ext .json,.ts .",
     "build": "tsc",
-    "tsc": "tsc"
-    "postinstall": "npm run tsc"
+    "postinstall": "npm run tsc",
     "start": "tsc && electron .",
     "package": "tsc && electron-forge package",
     "make": "tsc && electron-forge make",
